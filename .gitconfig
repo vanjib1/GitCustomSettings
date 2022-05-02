@@ -1,0 +1,26 @@
+[user]
+	name = Brandon Van Philips
+	email = vanjib14@gmail.com #insert email here
+[core]
+	editor = \"C:/Users/bvanphilips/AppData/Local/Programs/Microsoft VS Code/Code.exe\" --wait
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false
+[diff]
+	guitool = vscode
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+	guitool = vscode
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[corre]
+	editor = code -w
+[alias]
+	pr = "!f() { exec vsts code pr \\"$@\\"; }; f"
+	repo = "!f() { exec vsts code repo \\"$@\\"; }; f"
